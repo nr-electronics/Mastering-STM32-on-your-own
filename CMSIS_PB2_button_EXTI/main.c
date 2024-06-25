@@ -17,7 +17,7 @@ void PINA_0_INIT (void)//Button PA0
   
 	GPIOA->CRL &= ~GPIO_CRL_CNF0_0;//10: Input with pull-up / pull-down Ч вход с подт€жкой к питанию или к земле;
   GPIOA->CRL |= GPIO_CRL_CNF0_1; //10: Input with pull-up / pull-down Ч вход с подт€жкой к питанию или к земле;                       
- // GPIOA->BSRR = GPIO_BSRR_BS9;//подт€жка к питанию
+  GPIOA->BSRR = GPIO_BSRR_BR9;//подт€жка к земле
 }
 void PINB_2_INIT (void) //LED PB2
 {
